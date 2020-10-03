@@ -201,7 +201,7 @@ body {
 
         .left,
         .right {
-            font-size: 200px;
+            font-size: 300px;
             font-weight: 100;
             color: #FBBA58;
         }
@@ -328,6 +328,7 @@ body {
             &-persone {
                 flex-basis: 26%;
                 margin-bottom: 30px;
+                cursor: pointer;
 
                 &-title {
                     margin-bottom: 15px;
@@ -366,7 +367,19 @@ body {
                     }
                 }
             }
+            .margin-top {
+                margin-top: 50px;
+            }
+            .column-reverse {
+                img {
+                    max-width: 200px;
+                    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 
+                    &:hover {
+                        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                    }
+                }
+            }
             .column {
                 img {
                     max-width: 200px;
@@ -489,13 +502,26 @@ body {
     &-contacts {
         display: flex;
         flex-direction: column;
+        align-items: flex-end;
 
-        .our-contact {}
+        .our-contact {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
 
-        .footer-tel {}
+        .footer-tel {
+            color: #fff;
+            font-weight: 100;
+            font-size: 19px;
+        }
 
         .sotial-links {
-            .sotial-link {}
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            .sotial-link {
+                margin-left: 10px;
+            }
         }
     }
 }
