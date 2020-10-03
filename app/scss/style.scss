@@ -150,7 +150,7 @@ body {
         }
         &__main-text {
             background: url(/app/img/lineYellow.svg) no-repeat bottom;
-            font-size: 59px;
+            font-size: 50px;
             flex-basis: 40%;
 
         }
@@ -166,6 +166,9 @@ body {
                 align-items: center;
                 cursor: pointer;
                 margin-bottom: 20px;
+                svg {
+                    margin-right: 10px;
+                }
             }
         }
     }
