@@ -49,6 +49,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -85,11 +86,13 @@ body {
             margin-right: 33px;
         }
     }
+
     &__center {
         a {
             color: #fff;
             margin-left: 25px;
             font-size: 20px;
+
             &:hover {
                 border-bottom: 2px solid #FBA340;
             }
@@ -113,6 +116,7 @@ body {
             &:hover {
                 box-shadow: 0px 0px 4px 2px #FBA340;
             }
+
             &:active {
                 background-color: #01020a70;
             }
@@ -121,6 +125,7 @@ body {
         .header-tel {
             border: 1px solid #FBA340;
             border-radius: 6px;
+
             &:hover {
                 box-shadow: 0px 0px 4px 2px #FBA340;
             }
@@ -148,11 +153,18 @@ body {
                 font-size: 20px;
             }
         }
+
         &__main-text {
-            background: url(/app/img/lineYellow.svg) no-repeat bottom;
             font-size: 50px;
             flex-basis: 40%;
+        }
 
+        &-main-text,
+        .adv,
+        .des,
+        .dev,
+        .copy {
+            width: 700px;
         }
 
         .services-list {
@@ -166,6 +178,7 @@ body {
                 align-items: center;
                 cursor: pointer;
                 margin-bottom: 20px;
+
                 svg {
                     margin-right: 10px;
                 }
@@ -177,25 +190,12 @@ body {
         &-title {
             font-size: 37px;
             font-weight: 100;
-            text-align: center; 
+            text-align: center;
+
             span {
-                color: #ff0000;
-                background: -webkit-linear-gradient(top, #ff8100, #fff);
-                background: -webkit-linear-gradient(top, #ff8100, #fff);
-                background-image: -webkit-linear-gradient(top, rgb(255, 129, 0), rgb(255, 255, 255));
-                background-position-x: initial;
-                background-position-y: initial;
-                background-size: initial;
-                background-repeat-x: initial;
-                background-repeat-y: initial;
-                background-attachment: initial;
-                background-origin: initial;
-                background-clip: text;
-                background-color: initial;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                color: #fba340;
                 font-weight: 400;
-            } 
+            }
         }
 
         hr {
@@ -214,6 +214,7 @@ body {
                     width: 400px;
                 }
             }
+
             &-text {
                 &-paragrafh {
                     display: flex;
@@ -272,7 +273,7 @@ body {
 
         .left,
         .right {
-            font-size: 300px;
+            // font-size: 300px;
             font-weight: 100;
             color: #FBBA58;
         }
@@ -438,9 +439,11 @@ body {
                     }
                 }
             }
+
             .margin-top {
                 margin-top: 50px;
             }
+
             .column-reverse {
                 img {
                     max-width: 200px;
@@ -451,6 +454,7 @@ body {
                     }
                 }
             }
+
             .column {
                 img {
                     max-width: 200px;
@@ -590,6 +594,7 @@ body {
             display: flex;
             align-items: center;
             margin-top: 10px;
+
             .sotial-link {
                 margin-left: 10px;
             }
@@ -666,13 +671,19 @@ body {
 }
 
 @media (max-width: 1174px) {
+    .header {
+        padding: 15px 50px;
+    }
+
     .main {
         .online-bisness__main-text {
             font-size: 40px;
         }
+
         .company-text {
             font-size: 20px;
         }
+
         .portfolio-image {
             a {
                 img {
@@ -680,9 +691,301 @@ body {
                 }
             }
         }
+
         .team {
             margin-bottom: 0;
         }
+
+        .company {
+            max-width: 100%;
+
+            &-text {
+                padding: 10px 0;
+            }
+        }
     }
-    
+
+}
+
+@media (max-width:920px) {
+    .header {
+        padding: 10px 25px;
+    }
+
+    .main {
+        .online-bisness {
+            min-height: 0;
+            padding: 50px 0 0 0;
+
+            &__main-text {
+                font-size: 30px;
+            }
+
+            .services-list-item {
+                margin-bottom: 10px;
+            }
+        }
+
+        .problem {
+            .problem-title {
+                font-size: 25px;
+            }
+
+            .problem-main {
+                margin: 30px;
+
+                &-img {
+                    img {
+                        height: 400px;
+                        width: 300px;
+                    }
+                }
+
+                &-text-paragrafh {
+                    margin: 15px;
+                }
+            }
+        }
+
+        .stages {
+            flex-wrap: wrap;
+
+            .stages-items:not(:first-child) {
+                flex-basis: 40%;
+                margin: 0;
+                margin-bottom: 50px;
+            }
+
+            &-items {
+                flex-basis: 40%;
+                margin-bottom: 50px;
+            }
+        }
+
+        .company {
+            margin: 50px 0 50px 0;
+        }
+
+        .portfolio {
+            &-image {
+                a {
+                    img {
+                        max-width: 300px;
+                    }
+                }
+
+                .sites-name {
+                    top: 21%;
+                    left: 11%;
+                    font-size: 23px;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width:768px) {
+    .header {
+        flex-direction: column;
+        padding: 25px;
+        background-color: #1c1f22;
+
+        &__left-side {
+            flex-direction: column;
+
+            .header-logo {
+                margin-right: 0;
+            }
+
+            .header-title {
+                font-weight: 600;
+                margin-top: 20px;
+            }
+        }
+
+        &__center {
+            display: none;
+        }
+
+        &__right-side {
+            .header__tel {
+                display: none;
+            }
+
+            .header-button {
+                margin: 0;
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .main {
+        .online-bisness {
+            flex-direction: column;
+
+            &__main-text {
+                font-size: 42px;
+                margin-left: 30px;
+                margin-bottom: 150px;
+            }
+
+            .services-list {
+                flex-direction: row;
+            }
+        }
+
+        .problem {
+            .problem-main {
+                margin: 0px;
+                margin-top: 20px;
+
+                &-img {
+                    img {
+                        height: 300px;
+                        width: 250px;
+                    }
+                }
+
+                &-text-paragrafh {
+                    margin: 0 15px 15px 15px;
+                }
+            }
+        }
+
+        .stages {
+            margin: 50px 0;
+
+            &-items {
+                img {
+                    max-width: 150px;
+                }
+
+                .stages-text {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .main {
+        .online-bisness {
+            .services-list {
+                flex-wrap: wrap;
+
+                &-item {
+                    flex-basis: 50%;
+                }
+            }
+        }
+
+        .problem {
+            .problem-title {
+                font-size: 18px;
+            }
+
+            .problem-main {
+                flex-direction: column;
+                align-items: center;
+                &-img {
+                    img {
+                        height: 300px;
+                        width: 250px;
+                    }
+                }
+            }
+        }
+        .portfolio {
+            &-image {
+                a {
+                    img {
+                        max-width: 400px;
+                    }
+                }
+
+                .sites-name {
+                    top: 30%;
+                    left: 21%;
+                }
+            }
+        }
+    }
+    .footer {
+        flex-direction: column;
+    }
+}
+@media (max-width: 414px) { 
+    .main {
+        .online-bisness {
+            &__main-text {
+                font-size: 25px;
+            }
+            ul {
+                li {
+                    font-size: 14px;
+                    svg {
+                        width: 34px;
+                    }
+                }
+            }
+        }
+
+        .problem {
+            &-title {
+                line-height: 28px;
+            }
+            .problem-main {
+                &-img {
+                    img {
+                        margin-bottom: 20px;
+                    }
+                }
+
+                &-text-paragrafh {
+                    svg {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .stages {
+            &-items {
+                img {
+                    max-width: 100px;
+                }
+
+                .stages-text {
+                    font-size: 20px;
+                }
+            }
+        }
+        .company {
+            &-text {
+                font-size: 15px;
+            }
+            .left, .right {
+                display: none;
+            }
+        }
+        .portfolio {
+            &-title {
+                font-size: 30px;
+            }
+            &-image {
+                a {
+                    img {
+                        width: 300px;
+                    }
+                }
+                .sites-name {
+                    top: 21%;
+                    left: 11%;
+                    font-size: 23px;
+                }
+            }
+        }
+    }
 }

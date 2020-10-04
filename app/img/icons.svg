@@ -103,6 +103,23 @@
             <path d="M21.375 33.75C22.1082 34.4983 22.9834 35.0929 23.9493 35.4987C24.9152 35.9046 25.9523 36.1136 27 36.1136C28.0477 36.1136 29.0848 35.9046 30.0507 35.4987C31.0166 35.0929 31.8918 34.4983 32.625 33.75" stroke="#FBBA58" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
         </g>
     </symbol>
+    <symbol id="rightLine" viewBox="0 0 47 349">
+        <g>
+            <line y1="348" x2="45" y2="348" stroke="#FBBA58" stroke-width="2"/>
+            <line x1="46" y1="2" x2="46" y2="349" stroke="#FBBA58" stroke-width="2"/>
+            <line x1="1" y1="1" x2="46" y2="1" stroke="#FBBA58" stroke-width="2"/>
+        </g>
+    </symbol>
+    <symbol id="leftLine" viewBox="0 0 47 349">
+        <g>
+            <line x1="1" y1="2" x2="1" y2="349" stroke="#FBBA58" stroke-width="2"/>
+            <line y1="348" x2="45" y2="348" stroke="#FBBA58" stroke-width="2"/>
+            <line y1="1" x2="45" y2="1" stroke="#FBBA58" stroke-width="2"/>
+        </g>
+    </symbol>
+
+</svg>
+
 
 
 
