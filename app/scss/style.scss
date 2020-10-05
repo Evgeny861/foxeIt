@@ -872,6 +872,9 @@ body {
 @media (max-width:576px) {
     .main {
         .online-bisness {
+            ul {
+                text-align: center;
+            }
             .services-list {
                 flex-wrap: wrap;
 
@@ -914,6 +917,13 @@ body {
     }
     .footer {
         flex-direction: column;
+    }
+    .popup-persone {
+        .overlay {
+            .persone-wrapper {
+                width: 90%;
+            }
+        }
     }
 }
 @media (max-width: 414px) { 
