@@ -5,6 +5,7 @@ import problem from './problem.js';
 import team from './team.js';
 import scroll from './scroll.js';
 
+new WOW().init();
 carousel();
 videoPlayerInit();
 services();

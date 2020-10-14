@@ -568,10 +568,9 @@ body {
     justify-content: space-around;
     text-align: center;
 
-    &-logo {}
-
     &-form {
         width: 30%;
+        
     }
 
     &-contacts {
@@ -620,7 +619,7 @@ body {
             width: 40%;
             max-width: 500px;
             flex-wrap: wrap;
-            margin: 5% auto;
+            margin: 2% auto;
             padding: 20px;
             font-size: 18px;
             background-color: #252530;
